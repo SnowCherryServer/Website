@@ -1,0 +1,22 @@
+.wrapper {
+    min-height: 100%;
+}
+
+.wrapper .content{
+    padding-bottom: 50px; /* footer区块的高度 */
+}
+
+.footer {
+    position: relative;
+    margin-top: -50px;  /* 使footer区块正好处于content的padding-bottom位置 */
+    height: 50px;
+    clear: both;
+}
+
+.clearfix::after {
+    display: block;
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
